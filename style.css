@@ -6,6 +6,7 @@
 }
 html {
     font-size: 62.5%;
+    overflow-y: hidden;
 }
 ul {
     list-style: none;
@@ -19,8 +20,29 @@ body {
 }
 
 .container {
-    max-width: 95%;
+    max-width: 98%;
     margin: 0 auto;
 }
 
-/*  */
+/* styling the footer */
+
+#footer {
+    border: 1px solid red;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footer .footer__top {
+    border: 1px solid blue;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .footer__top .col {
+    flex: 1;
+    border: 1px solid green;
+}
